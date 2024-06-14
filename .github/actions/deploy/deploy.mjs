@@ -91,7 +91,7 @@ const createHelmCommand = ({ isDryRun }) => {
     `helm upgrade --install affine .github/helm/affine`,
     `--namespace  ${namespace}`,
     `--set        global.ingress.enabled=true`,
-    `--set-json   global.ingress.annotations=\"{ \\"kubernetes.io/ingress.class\\": \\"gce\\", \\"kubernetes.io/ingress.allow-http\\": \\"true\\", \\"kubernetes.io/ingress.global-static-ip-name\\": \\"${STATIC_IP_NAME}\\", \\"networking.gke.io/managed-certificates\\": \\"managed-cert\\"}\"`,
+    `--set-json   global.ingress.annotations=\"{ \\"kubernetes.io/ingress.class\\": \\"gce\\", \\"kubernetes.io/ingress.allow-http\\": \\"true\\", \\"kubernetes.io/ingress.global-static-ip-name\\": \\"${STATIC_IP_NAME}\\"}\"`,
     `--set-string global.ingress.host="${host}"`,
     `--set-string global.version="${APP_VERSION}"`,
     ...redisAndPostgres,
