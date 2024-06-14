@@ -12,16 +12,13 @@ import {
 } from '@blocksuite/presets';
 
 function customLoadFonts(service: RootService): void {
-  if (runtimeConfig.isSelfHosted) {
-    const fonts = AffineCanvasTextFonts.map(font => ({
-      ...font,
-      // self-hosted fonts are served from /assets
-      url: '/assets/' + new URL(font.url).pathname.split('/').pop(),
-    }));
-    service.fontLoader.load(fonts);
-  } else {
-    service.fontLoader.load(AffineCanvasTextFonts);
-  }
+  const fonts = AffineCanvasTextFonts.map(font => ({
+    ...font,
+    url:
+      'https://cdn.virclay.com/fonts/' +
+      new URL(font.url).pathname.split('/').pop(),
+  }));
+  service.fontLoader.load(fonts);
 }
 
 function withAffineRootService(Service: typeof RootService) {
