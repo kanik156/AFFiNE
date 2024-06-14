@@ -155,15 +155,13 @@ export class SubscriptionService {
     redirectUrl: string;
     idempotencyKey: string;
   }) {
-    /*
     if (
       this.config.deploy &&
       this.config.affine.canary &&
       !this.features.isStaff(user.email)
     ) {
-      throw new BadRequestException('You are not allowed to do this.');
+      // throw new BadRequestException('You are not allowed to do this.');
     }
-    */
 
     const currentSubscription = await this.db.userSubscription.findFirst({
       where: {
