@@ -25,7 +25,7 @@ export function getRuntimeConfig(buildFlags: BuildFlags): RuntimeConfig {
       enableExperimentalFeature: false,
       enablePeekView: false,
       allowLocalWorkspace: buildFlags.distribution === 'desktop' ? true : false,
-      serverUrlPrefix: 'https://app.affine.pro',
+      serverUrlPrefix: 'https://app.virclay.com',
       appVersion: packageJson.version,
       editorVersion: packageJson.devDependencies['@blocksuite/presets'],
       appBuildType: 'stable',
@@ -34,14 +34,14 @@ export function getRuntimeConfig(buildFlags: BuildFlags): RuntimeConfig {
       return {
         ...this.stable,
         enablePageHistory: true,
-        serverUrlPrefix: 'https://insider.affine.pro',
+        serverUrlPrefix: 'https://app.virclay.com',
         appBuildType: 'beta' as const,
       };
     },
     get internal() {
       return {
         ...this.stable,
-        serverUrlPrefix: 'https://insider.affine.pro',
+        serverUrlPrefix: 'https://app.virclay.com',
         appBuildType: 'internal' as const,
       };
     },
@@ -66,7 +66,7 @@ export function getRuntimeConfig(buildFlags: BuildFlags): RuntimeConfig {
       enableExperimentalFeature: true,
       enablePeekView: true,
       allowLocalWorkspace: buildFlags.distribution === 'desktop' ? true : false,
-      serverUrlPrefix: 'https://affine.fail',
+      serverUrlPrefix: 'https://app.virclay.com',
       appVersion: packageJson.version,
       editorVersion: packageJson.devDependencies['@blocksuite/presets'],
       appBuildType: 'canary',

@@ -63,7 +63,7 @@ export TOLGEE_API_KEY=tgpak_XXXXXXX
 
 ## References
 
-- [AFFiNE | Tolgee](https://i18n.affine.pro/)
+- [AFFiNE | Tolgee](https://app.tolgee.io/)
 - [Tolgee Documentation](https://tolgee.io/docs/)
 - [i18next](https://www.i18next.com/)
 - [react-i18next](https://react.i18next.com/)

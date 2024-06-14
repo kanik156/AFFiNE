@@ -80,9 +80,9 @@ export const getPublicPath = (buildFlags: BuildFlags) => {
   }
 
   if (BUILD_TYPE === 'canary') {
-    return `https://dev.affineassets.com/`;
+    return `https://assets-dev.virclay.com/`;
   } else if (BUILD_TYPE === 'beta' || BUILD_TYPE === 'stable') {
-    return `https://prod.affineassets.com/`;
+    return `https://assets-prod.virclay.com/`;
   }
   return publicPath;
 };

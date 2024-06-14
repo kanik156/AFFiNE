@@ -28,7 +28,7 @@ export const emailTemplate = ({
           <td>
             <a href="https://affine.pro" target="_blank">
               <img
-                src="https://cdn.affine.pro/mail/2023-8-9/affine-logo.png"
+                src="https://cdn.virclay.com/mail/2023-8-9/affine-logo.png"
                 alt="AFFiNE log"
                 height="32px"
               />
@@ -133,7 +133,7 @@ export const emailTemplate = ({
                     href="https://github.com/toeverything/AFFiNE"
                     target="_blank"
                     ><img
-                      src="https://cdn.affine.pro/mail/2023-8-9/Github.png"
+                      src="https://cdn.virclay.com/mail/2023-8-9/Github.png"
                       alt="AFFiNE github link"
                       height="16px"
                   /></a>
@@ -141,7 +141,7 @@ export const emailTemplate = ({
                 <td style="padding: 0 10px">
                   <a href="https://twitter.com/AffineOfficial" target="_blank">
                     <img
-                      src="https://cdn.affine.pro/mail/2023-8-9/Twitter.png"
+                      src="https://cdn.virclay.com/mail/2023-8-9/Twitter.png"
                       alt="AFFiNE twitter link"
                       height="16px"
                     />
@@ -150,7 +150,7 @@ export const emailTemplate = ({
                 <td style="padding: 0 10px">
                   <a href="https://discord.gg/Arn7TqJBvG" target="_blank"
                     ><img
-                      src="https://cdn.affine.pro/mail/2023-8-9/Discord.png"
+                      src="https://cdn.virclay.com/mail/2023-8-9/Discord.png"
                       alt="AFFiNE discord link"
                       height="16px"
                   /></a>
@@ -158,7 +158,7 @@ export const emailTemplate = ({
                 <td style="padding: 0 10px">
                   <a href="https://www.youtube.com/@affinepro" target="_blank"
                     ><img
-                      src="https://cdn.affine.pro/mail/2023-8-9/Youtube.png"
+                      src="https://cdn.virclay.com/mail/2023-8-9/Youtube.png"
                       alt="AFFiNE youtube link"
                       height="16px"
                   /></a>
@@ -166,7 +166,7 @@ export const emailTemplate = ({
                 <td style="padding: 0 10px">
                   <a href="https://t.me/affineworkos" target="_blank"
                     ><img
-                      src="https://cdn.affine.pro/mail/2023-8-9/Telegram.png"
+                      src="https://cdn.virclay.com/mail/2023-8-9/Telegram.png"
                       alt="AFFiNE telegram link"
                       height="16px"
                   /></a>
@@ -174,7 +174,7 @@ export const emailTemplate = ({
                 <td style="padding: 0 10px">
                   <a href="https://www.reddit.com/r/Affine/" target="_blank"
                     ><img
-                      src="https://cdn.affine.pro/mail/2023-8-9/Reddit.png"
+                      src="https://cdn.virclay.com/mail/2023-8-9/Reddit.png"
                       alt="AFFiNE reddit link"
                       height="16px"
                   /></a>
@@ -209,7 +209,7 @@ export const emailTemplate = ({
             "
           >
             Copyright<img
-              src="https://cdn.affine.pro/mail/2023-8-9/copyright.png"
+              src="https://cdn.virclay.com/mail/2023-8-9/copyright.png"
               alt="copyright"
               height="14px"
               style="vertical-align: middle; margin: 0 4px"

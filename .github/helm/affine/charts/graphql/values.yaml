@@ -1,6 +1,6 @@
 replicaCount: 1
 image:
-  repository: ghcr.io/toeverything/affine-graphql
+  repository: ghcr.io/kanik156/affine-graphql
   pullPolicy: IfNotPresent
   tag: ''
 
@@ -50,7 +50,7 @@ app:
   mailer:
     secretName: 'mailer'
     host: 'smtp.gmail.com'
-    port: '465'
+    port: '587'
     user: ''
     password: ''
     sender: 'noreply@toeverything.info'

@@ -2,16 +2,16 @@ global:
   ingress:
     enabled: false
     className: ''
-    host: affine.pro
+    host: app.virclay.com
     tls: []
   secret:
     secretName: 'server-private-key'
     privateKey: ''
   database:
-    user: 'postgres'
-    url: 'pg-postgresql'
+    user: 'affine_owner'
+    url: 'ep-dark-frog-a1db9779-pooler.ap-southeast-1.aws.neon.tech'
     port: '5432'
-    name: 'affine'
+    name: 'affine?sslmode=require'
     password: ''
     gcloud:
       enabled: false
@@ -23,9 +23,9 @@ global:
       proxyPort: '5432'
   redis:
     enabled: true
-    host: 'redis-master'
+    host: '35.234.27.79'
     port: '6379'
-    username: ''
+    username: 'default'
     password: ''
     database: 0
   gke:
