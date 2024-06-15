@@ -15,7 +15,7 @@ function customLoadFonts(service: RootService): void {
   const fonts = AffineCanvasTextFonts.map(font => ({
     ...font,
     url:
-      'https://cdn.virclay.com/fonts/' +
+      'https://cdn.glimnote.dev/fonts/' +
       new URL(font.url).pathname.split('/').pop(),
   }));
   service.fontLoader.load(fonts);

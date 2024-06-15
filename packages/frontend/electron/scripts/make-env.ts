@@ -35,7 +35,7 @@ const icnsPath = path.join(
 
 const iconPngPath = path.join(ROOT, './resources/icons/icon.png');
 
-const iconUrl = `https://cdn.virclay.com/app-icons/icon_${buildType}.ico`;
+const iconUrl = `https://cdn.glimnote.dev/app-icons/icon_${buildType}.ico`;
 const arch =
   process.argv.indexOf('--arch') > 0
     ? process.argv[process.argv.indexOf('--arch') + 1]
