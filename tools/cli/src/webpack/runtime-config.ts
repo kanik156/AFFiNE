@@ -25,7 +25,7 @@ export function getRuntimeConfig(buildFlags: BuildFlags): RuntimeConfig {
       enableExperimentalFeature: false,
       enablePeekView: false,
       allowLocalWorkspace: buildFlags.distribution === 'desktop' ? true : false,
-      serverUrlPrefix: 'https://app.virclay.com',
+      serverUrlPrefix: 'https://app.glimnote.dev',
       appVersion: packageJson.version,
       editorVersion: packageJson.devDependencies['@blocksuite/presets'],
       appBuildType: 'stable',
@@ -34,14 +34,14 @@ export function getRuntimeConfig(buildFlags: BuildFlags): RuntimeConfig {
       return {
         ...this.stable,
         enablePageHistory: true,
-        serverUrlPrefix: 'https://app.virclay.com',
+        serverUrlPrefix: 'https://app.glimnote.dev',
         appBuildType: 'beta' as const,
       };
     },
     get internal() {
       return {
         ...this.stable,
-        serverUrlPrefix: 'https://app.virclay.com',
+        serverUrlPrefix: 'https://app.glimnote.dev',
         appBuildType: 'internal' as const,
       };
     },
@@ -66,7 +66,7 @@ export function getRuntimeConfig(buildFlags: BuildFlags): RuntimeConfig {
       enableExperimentalFeature: true,
       enablePeekView: true,
       allowLocalWorkspace: buildFlags.distribution === 'desktop' ? true : false,
-      serverUrlPrefix: 'https://app.virclay.com',
+      serverUrlPrefix: 'https://app.glimnote.dev',
       appVersion: packageJson.version,
       editorVersion: packageJson.devDependencies['@blocksuite/presets'],
       appBuildType: 'canary',
