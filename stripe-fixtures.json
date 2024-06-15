@@ -1,0 +1,77 @@
+{
+  "_meta": {
+    "template_version": 0
+  },
+  "fixtures": [
+    {
+      "name": "prod_pro",
+      "path": "/v1/products",
+      "method": "post",
+      "params": {
+        "name": "Pro",
+        "metadata": {
+          "index": 0
+        }
+      }
+    },
+    {
+      "name": "price_pro_month",
+      "path": "/v1/prices",
+      "method": "post",
+      "params": {
+        "product": "${prod_pro:id}",
+        "currency": "usd",
+        "billing_scheme": "per_unit",
+        "unit_amount": 799,
+        "recurring": {
+          "interval": "month",
+          "interval_count": 1
+        },
+        "lookup_key": "pro_monthly"
+      }
+    },
+    {
+      "name": "price_pro_year",
+      "path": "/v1/prices",
+      "method": "post",
+      "params": {
+        "product": "${prod_pro:id}",
+        "currency": "usd",
+        "billing_scheme": "per_unit",
+        "unit_amount": 8100,
+        "recurring": {
+          "interval": "year",
+          "interval_count": 1
+        },
+        "lookup_key": "pro_yearly"
+      }
+    },
+    {
+      "name": "prod_ai",
+      "path": "/v1/products",
+      "method": "post",
+      "params": {
+        "name": "AI",
+        "metadata": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "name": "price_ai_year",
+      "path": "/v1/prices",
+      "method": "post",
+      "params": {
+        "product": "${prod_ai:id}",
+        "currency": "usd",
+        "billing_scheme": "per_unit",
+        "unit_amount": 10680,
+        "recurring": {
+          "interval": "year",
+          "interval_count": 1
+        },
+        "lookup_key": "ai_yearly"
+      }
+    }
+  ]
+}
