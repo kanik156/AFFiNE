@@ -5,7 +5,7 @@ import { UserService } from '../user/service';
 import { FeatureService } from './service';
 import { FeatureType } from './types';
 
-const STAFF = ['@glimnote.dev'];
+const STAFF = ['@toeverything.info', '@affine.pro', '@glimnote.dev'];
 
 export enum EarlyAccessType {
   App = 'app',
