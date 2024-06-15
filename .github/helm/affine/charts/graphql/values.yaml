@@ -50,10 +50,10 @@ app:
   mailer:
     secretName: 'mailer'
     host: 'smtp.gmail.com'
-    port: '587'
+    port: '465'
     user: ''
     password: ''
-    sender: 'noreply@toeverything.info'
+    sender: 'support@glimnote.dev'
   metrics:
     enabled: false
     secretName: 'metrics'
