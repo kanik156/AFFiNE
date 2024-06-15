@@ -2,14 +2,14 @@ global:
   ingress:
     enabled: false
     className: ''
-    host: app.virclay.com
+    host: app.glimnote.dev
     tls: []
   secret:
     secretName: 'server-private-key'
     privateKey: ''
   database:
     user: 'affine_owner'
-    url: 'ep-dark-frog-a1db9779-pooler.ap-southeast-1.aws.neon.tech'
+    url: 'ep-ancient-frost-a1t1enyk.ap-southeast-1.aws.neon.tech'
     port: '5432'
     name: 'affine?sslmode=require'
     password: ''
